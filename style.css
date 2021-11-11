@@ -14,15 +14,16 @@ body{
     z-index: -1;
     width: 100%;
     height: 100%;
-    background: -webkit-linear-gradient(top,  red 0%,black 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -webkit-linear-gradient(top,  red 0%,darkblue 100%); /* Chrome10-25,Safari5.1-6 */
   }
+  
   .home{
       display: flex;
       justify-content: center;
   }
   .home h1{
       font-size: 325%;
-      margin-top: 5%;
+      margin-top: 2.5em;
   }
   ::-webkit-scrollbar{
     width: 10px;
@@ -41,4 +42,42 @@ body{
     background-color: black;
     position: fixed;
     top: 0;
+}
+.nav{
+    display: flex;
+    color: red;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav >p{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 2%;
+}
+.contents{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contents p{
+    font-size: larger;
+    margin-left: 2em;
+    margin-right: 2em;
+    cursor: pointer;
+}
+#about{
+    display: flex;
+    flex-direction: column;
+}
+#about h1{
+    font-size: 3em;
+    margin: 0 5% 0;
+    color: red;
+}
+#about ul{
+    font-size: 2em;
+    margin: 0 5% 0;
+}
+#about li{
+    color: red;
 }
